@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Student Help Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">Student<span>Help</span> Hub</div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="page-header">
+
+    <div class="small-title">GET IN TOUCH</div>
+
+    <h1>Contact Us</h1>
+
+    <p>
+        Have a question or need a service? We are here to help.
+    </p>
+
+</section>
+
+<section class="contact-section">
+
+    <div class="section-title">
+
+        <div class="small-title">CONTACT OPTIONS</div>
+
+        <h2>Let's Connect</h2>
+
+    </div>
+
+    <div class="contact-options">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">💬</div>
+
+            <h3>WhatsApp</h3>
+
+            <p>
+                Chat with us directly on WhatsApp for quick support.
+            </p>
+
+            <a href="https://wa.me/918180811565"
+               target="_blank"
+               class="btn btn-primary">
+                Chat on WhatsApp
+            </a>
+
+        </div>
+
+        <div class="contact-card">
+
+            <div class="contact-icon">📧</div>
+
+            <h3>Email</h3>
+
+            <p>
+                Send us your questions or requirements through email.
+            </p>
+
+            <a href="mailto:kumbhartanvi101@gmail.com"
+               class="btn btn-outline">
+                Send Email
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="order-section">
+
+    <div class="section-title">
+
+        <div class="small-title">QUICK ORDER</div>
+
+        <h2>Tell Us What You Need</h2>
+
+        <p>
+            Fill the form below and we will contact you on WhatsApp.
+        </p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <form id="orderForm">
+
+            <label for="name">Your Name</label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="service">Select Service</label>
+
+            <select id="service" required>
+
+                <option value="">
+                    -- Select a Service --
+                </option>
+
+                <option value="Resume Making">
+                    Resume Making - ₹99
+                </option>
+
+                <option value="PPT & Presentation">
+                    PPT & Presentation - ₹99
+                </option>
+
+                <option value="Synopsis & Documentation">
+                    Synopsis & Documentation - ₹49
+                </option>
+
+                <option value="HTML / CSS Help">
+                    HTML / CSS Help - ₹199
+                </option>
+
+                <option value="PDF & Document Formatting">
+                    PDF & Document Formatting - ₹49
+                </option>
+
+                <option value="Project Guidance">
+                    Project Guidance - ₹199
+                </option>
+
+            </select>
+
+            <label for="requirements">
+                Your Requirements
+            </label>
+
+            <textarea
+                id="requirements"
+                placeholder="Tell us about your requirements..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Order on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 <span>Student Help Hub</span>. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
