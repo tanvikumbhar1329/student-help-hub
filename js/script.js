@@ -1,4 +1,8 @@
-/* WhatsApp Order Form */
+function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
+}
+
 
 const orderForm = document.getElementById("orderForm");
 
@@ -13,6 +17,7 @@ if (orderForm) {
         const service = document.getElementById("service").value;
         const requirements = document.getElementById("requirements").value;
 
+
         const message =
             "Hello Student Help Hub!%0A%0A" +
             "Name: " + encodeURIComponent(name) + "%0A" +
@@ -20,24 +25,15 @@ if (orderForm) {
             "Service: " + encodeURIComponent(service) + "%0A" +
             "Requirements: " + encodeURIComponent(requirements);
 
+
         const whatsappNumber = "918180811565";
 
         const whatsappURL =
             "https://wa.me/" + whatsappNumber + "?text=" + message;
 
+
         window.open(whatsappURL, "_blank");
 
     });
-
-}
-
-
-/* Mobile Menu */
-
-function toggleMenu() {
-
-    const navLinks = document.querySelector(".nav-links");
-
-    navLinks.classList.toggle("active");
 
 }
